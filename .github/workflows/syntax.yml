@@ -1,0 +1,23 @@
+name: Syntax check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  shell:
+    name: Shell and plist syntax
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check shell syntax
+        run: |
+          for script in *.sh *.command; do
+            bash -n "$script"
+          done
+
+      - name: Check property lists
+        run: |
+          plutil -lint quick-action/Info.plist
+          plutil -convert xml1 -o /dev/null quick-action/workflow.json

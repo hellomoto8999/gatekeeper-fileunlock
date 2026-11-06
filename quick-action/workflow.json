@@ -1,0 +1,115 @@
+{
+  "actions": [
+    {
+      "action": {
+        "ActionBundlePath": "/System/Library/Automator/Run Shell Script.action",
+        "ActionName": "Run Shell Script",
+        "ActionParameters": {
+          "CheckedForUserDefaultShell": true,
+          "COMMAND_STRING": "exec \"$HOME/Library/Application Support/GatekeeperFileUnlock/unlock-gatekeeper.sh\" \"$@\"",
+          "inputMethod": 1,
+          "shell": "/bin/bash",
+          "source": ""
+        },
+        "AMAccepts": {
+          "Container": "List",
+          "Optional": true,
+          "Types": [
+            "com.apple.cocoa.string"
+          ]
+        },
+        "AMActionVersion": "2.0.3",
+        "AMApplication": [
+          "Automator"
+        ],
+        "AMParameterProperties": {
+          "CheckedForUserDefaultShell": {},
+          "COMMAND_STRING": {},
+          "inputMethod": {},
+          "shell": {},
+          "source": {}
+        },
+        "AMProvides": {
+          "Container": "List",
+          "Types": [
+            "com.apple.cocoa.string"
+          ]
+        },
+        "arguments": {
+          "0": {
+            "default value": 0,
+            "name": "inputMethod",
+            "required": "0",
+            "type": "0",
+            "uuid": "0"
+          },
+          "1": {
+            "default value": "",
+            "name": "source",
+            "required": "0",
+            "type": "0",
+            "uuid": "1"
+          },
+          "2": {
+            "default value": false,
+            "name": "CheckedForUserDefaultShell",
+            "required": "0",
+            "type": "0",
+            "uuid": "2"
+          },
+          "3": {
+            "default value": "",
+            "name": "COMMAND_STRING",
+            "required": "0",
+            "type": "0",
+            "uuid": "3"
+          },
+          "4": {
+            "default value": "/bin/sh",
+            "name": "shell",
+            "required": "0",
+            "type": "0",
+            "uuid": "4"
+          }
+        },
+        "BundleIdentifier": "com.apple.RunShellScript",
+        "CanShowSelectedItemsWhenRun": false,
+        "CanShowWhenRun": true,
+        "Category": [
+          "AMCategoryUtilities"
+        ],
+        "CFBundleVersion": "2.0.3",
+        "Class Name": "RunShellScriptAction",
+        "InputUUID": "7A2F139F-1579-47AF-82E6-D2FB847B2179",
+        "isViewVisible": true,
+        "Keywords": [
+          "Shell",
+          "Script",
+          "Command",
+          "Run",
+          "Unix"
+        ],
+        "location": "309.500000:631.000000",
+        "nibPath": "/System/Library/Automator/Run Shell Script.action/Contents/Resources/en.lproj/main.nib",
+        "OutputUUID": "C0C9058F-EB3B-42A5-A228-16898CB2FC0B",
+        "UnlocalizedApplications": [
+          "Automator"
+        ],
+        "UUID": "C2274956-1F9A-4720-90EF-56C585EF5316"
+      },
+      "isViewVisible": true
+    }
+  ],
+  "AMApplicationBuild": "540",
+  "AMApplicationVersion": "2.10",
+  "AMDocumentVersion": "2",
+  "connectors": {},
+  "workflowMetaData": {
+    "serviceApplicationBundleID": "com.apple.finder",
+    "serviceApplicationPath": "/System/Library/CoreServices/Finder.app",
+    "serviceInputTypeIdentifier": "com.apple.Automator.fileSystemObject",
+    "serviceOutputTypeIdentifier": "com.apple.Automator.nothing",
+    "serviceProcessesInput": 1,
+    "workflowTypeIdentifier": "com.apple.Automator.servicesMenu"
+  }
+}
